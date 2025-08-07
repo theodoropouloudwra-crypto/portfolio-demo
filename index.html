@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8" />
+<title>Πρόσκληση Βάπτισης</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    max-width: 700px;
+    margin-top: 50px;
+  }
+
+  /* Container με την εικόνα και το κενό πλαίσιο */
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Η εικόνα */
+  .main-image {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  /* Το "κενό πλαίσιο" πάνω στην εικόνα */
+  .content-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 80%;
+    max-height: 60%;
+    overflow-y: auto;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  /* Κείμενο μέσα στο πλαίσιο */
+  .content-box h1, .content-box h2, .content-box p, .content-box .parents, .content-box .directions, .content-box iframe, .content-box .rsvp {
+    margin: 10px 0;
+  }
+
+  /* Χάρτης */
+  .content-box iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    border: none;
+  }
+
+  /* Φόρμα RSVP */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  input, textarea, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+  }
+  button {
+    background-color: #4B3E2A;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #6F5847;
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- Εικόνα με το "κενό πλαίσιο" -->
+  <div class="image-container">
+    <img src="https://as1.ftcdn.net/jpg/01/29/17/04/1000_F_129170415_BNR1wpOJXd2RjNl7u9j5IRC6vKTUsrXt.jpg" alt="Εικόνα" class="main-image" />
+    
+    <!-- Το "κενό πλαίσιο" με το περιεχόμενο -->
+    <div class="content-box">
+      <h1>Σας προσκαλούμε στη βάπτιση της μικρής μας Ίριδας!</h1>
+      <h2>Κυριακή 15 Σεπτεμβρίου 2025</h2>
+      <p>και ώρα 13:00 στον Ιερό Ναό Αγίας Δύναμης,Σπάτα</p>
+      <p>Θα χαρούμε πολύ να είστε κοντά μας αυτή τη σημαντική μέρα!</p>
+
+      <div class="parents">
+        Με αγάπη,  
+        <br><strong>Νίκος & Ευγενία</strong>
+      </div>
+
+      <div class="directions">
+        ➤ Ο ναός βρίσκεται κοντά στο κέντρο των Σπάτων, με εύκολη πρόσβαση από την Αττική Οδό.  
+        <br>Υπάρχει χώρος στάθμευσης δίπλα από την εκκλησία.
+      </div>
+
+      <!-- Χάρτης Google -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.9488125787702!2d23.91482907492048!3d37.97832387193476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a19af1f907faaf%3A0x4cd892eebab9868!2sHoly%20Virgin%20church!5e0!3m2!1sen!2sgr!4v1754563793671!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+        allowfullscreen>
+      </iframe>
+
+      <!-- Ενσωμάτωση Google Form -->
+      <div class="rsvp">
+        <h3>Ενημερώστε μας την παρουσία σας</h3>
+        <iframe src="https://forms.gle/RPDUP4qMYCY3EVRp9"100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+      <div class="rsvp">
+        📞 Παρακαλούμε ενημερώστε μας έως 5 Σεπτεμβρίου  
+        <br>στο <strong>6971 234 567</strong> ή στο <strong>theodoropouloudwra@gmail.com</strong>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
